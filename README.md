@@ -6,7 +6,7 @@ Python follows a multi-step execution process that converts human-readable code 
 
 ## **Why is Python an Interpreted Language?**
 
-Python is called an **interpreted language** because it does **not** translate the source code directly into machine code that a computer’s CPU can execute. Instead, Python follows a **multi-step execution process**:
+Python is called an **[interpreted language](https://github.com/CristianSifuentes/compiler-vs-interpreter)** because it does **not** translate the source code directly into machine code that a computer’s CPU can execute. Instead, Python follows a **multi-step execution process**:
 
 - **Compiled Languages (e.g., C, C++)** → Translate **source code → machine code** (direct CPU execution).
 - **Interpreted Languages (e.g., Python, JavaScript)** → Translate **source code → bytecode → PVM interprets it**.
@@ -17,7 +17,7 @@ This means Python is **platform-independent**, as bytecode can run on any system
 
 ## **Why Python Uses Modules Instead of a Single Instruction List**
 
-Unlike traditional functional programming languages that use a **single long list of instructions**, Python uses **modular programming**:
+Unlike traditional functional programming languages that use a **single long list of instructions**, Python uses **[modular programming](https://github.com/CristianSifuentes/Pythodularity)**:
 
 - **Code Modularity**: Python organizes code into **modules** and **packages** rather than a single list of instructions.
 - **Reusable Components**: Instead of executing a long sequence of commands, Python allows breaking down tasks into reusable components (functions, classes, modules).
@@ -27,7 +27,7 @@ Unlike traditional functional programming languages that use a **single long lis
 
 ## **What is CPython?**
 
-- **CPython** is the **default and most widely used implementation** of Python.
+- **[CPython](https://github.com/CristianSifuentes/Cpython)** is the **default and most widely used implementation** of Python.
 - **Written in C**: CPython is implemented in the C programming language and executes Python bytecode using a C-based interpreter.
 - Other implementations of Python include:
   - **Jython** (runs on the Java Virtual Machine)
@@ -40,9 +40,10 @@ Unlike traditional functional programming languages that use a **single long lis
 
 Unlike C or C++, Python does **not** generate machine code (binary instructions) directly for the CPU. Instead:
 
-- Python **compiles** the code into **bytecode (.pyc, .pyo)**, which is an intermediate, lower-level form.
+- Python **compiles** the code into **[bytecode (.pyc, .pyo)](https://github.com/CristianSifuentes/bytecode)**, which is an intermediate, lower-level form.
 - **Bytecode is platform-independent** and cannot be executed directly by hardware.
-- A **Python Virtual Machine (PVM)** is required to **interpret and execute** bytecode.
+- A **[Python Virtual Machine (PVM)](https://github.com/CristianSifuentes/PVM)** is required to **[interpret and execute](https://github.com/CristianSifuentes/Pytexec)** bytecode.
+
 
 ### **Analogy:**
 - **Compiled Languages (C, C++)** → Translate **source code → machine code** (direct CPU execution).
@@ -93,11 +94,11 @@ Below is a **visual representation** of how Python internally processes and exec
 
 ## **Key Takeaways**
 
-- Python is an **[interpreted](https://github.com/CristianSifuentes/compiler-vs-interpreter)** language because it executes **bytecode using PVM**, rather than compiling it to machine code.
-- **[Bytecode (.pyc/.pyo)](https://github.com/CristianSifuentes/bytecode)** is an **intermediate representation** of Python code.
-- The **[Python Virtual Machine (PVM)](https://github.com/CristianSifuentes/PVM)** executes bytecode **line by line** dynamically.
-- **[CPython](https://github.com/CristianSifuentes/Cpython)** is the most common implementation of Python, built in **C**.
-- Python **[modules](https://github.com/CristianSifuentes/Pythodularity)** allow for **structured, reusable code**, unlike older functional programming languages that used long instruction sequences.
+- Python is an **interpreted** language because it executes **bytecode using PVM**, rather than compiling it to machine code.
+- **Bytecode (.pyc/.pyo)** is an **intermediate representation** of Python code.
+- The **Python Virtual Machine (PVM)** executes bytecode **line by line** dynamically.
+- **CPython** is the most common implementation of Python, built in **C**.
+- Python **modules** allow for **structured, reusable code**, unlike older functional programming languages that used long instruction sequences.
 
 This document provides a comprehensive explanation of Python’s internal workflow, ensuring an in-depth understanding of how Python code is executed.
 
